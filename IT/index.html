@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Request Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: navy;">IT Support Request Form</h2>
+
+    <form action="submit_it_request.php" method="post">
+        <table width="70%" border="1" cellpadding="10" cellspacing="0" bgcolor="#f3f3f3" align="center">
+            
+            <!-- Requestor Information Section -->
+            <tr>
+                <td colspan="2" bgcolor="#c0c0c0" align="center"><strong>Requestor Information</strong></td>
+            </tr>
+            <tr>
+                <td width="35%"><label for="employee_id">Employee ID:</label></td>
+                <td width="65%"><input type="text" id="employee_id" name="employee_id" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="employee_name">Employee Name:</label></td>
+                <td><input type="text" id="employee_name" name="employee_name" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td><input type="text" id="department" name="department" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" style="width: 100%;" required></td>
+            </tr>
+
+            <!-- Issue Details Section -->
+            <tr>
+                <td colspan="2" bgcolor="#c0c0c0" align="center"><strong>Issue Details</strong></td>
+            </tr>
+            <tr>
+                <td><label for="issue_type">Issue Type:</label></td>
+                <td>
+                    <select id="issue_type" name="issue_type" style="width: 100%;" required>
+                        <option value="hardware">Hardware</option>
+                        <option value="software">Software</option>
+                        <option value="network">Network</option>
+                        <option value="login">Login/Access</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="description">Issue Description:</label></td>
+                <td><textarea id="description" name="description" rows="5" style="width: 100%;" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="priority">Priority Level:</label></td>
+                <td>
+                    <input type="radio" id="low" name="priority" value="low" required>
+                    <label for="low">Low</label>
+                    <input type="radio" id="medium" name="priority" value="medium" required>
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="high" name="priority" value="high" required>
+                    <label for="high">High</label>
+                </td>
+            </tr>
+
+            <!-- Submission Section -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Request" style="background-color: navy; color: white; width: 40%;">
+                    <input type="reset" value="Reset Form" style="background-color: darkred; color: white; width: 40%;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

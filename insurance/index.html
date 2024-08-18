@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Application Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: darkblue;">Insurance Application Form</h2>
+
+    <form action="submit_insurance.php" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Personal Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="first_name">First Name:</label></td>
+                    <td width="75%"><input type="text" id="first_name" name="first_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" id="last_name" name="last_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender" style="width: 100%;" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" style="width: 100%;" required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Insurance Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Insurance Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="insurance_type">Type of Insurance:</label></td>
+                    <td width="75%">
+                        <select id="insurance_type" name="insurance_type" style="width: 100%;" required>
+                            <option value="health">Health Insurance</option>
+                            <option value="life">Life Insurance</option>
+                            <option value="auto">Auto Insurance</option>
+                            <option value="home">Home Insurance</option>
+                            <option value="travel">Travel Insurance</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="coverage_amount">Coverage Amount:</label></td>
+                    <td><input type="number" id="coverage_amount" name="coverage_amount" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="beneficiary">Beneficiary Name:</label></td>
+                    <td><input type="text" id="beneficiary" name="beneficiary" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="relationship">Relationship to Beneficiary:</label></td>
+                    <td><input type="text" id="relationship" name="relationship" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Health Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Health Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="pre_existing">Pre-existing Conditions:</label></td>
+                    <td>
+                        <textarea id="pre_existing" name="pre_existing" rows="4" style="width: 100%;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="medications">Current Medications:</label></td>
+                    <td>
+                        <textarea id="medications" name="medications" rows="4" style="width: 100%;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="smoking">Do you smoke?</label></td>
+                    <td>
+                        <select id="smoking" name="smoking" style="width: 100%;" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Submission Section -->
+        <fieldset>
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit Application" style="background-color: darkgreen; color: white; width: 30%;">
+                        <input type="reset" value="Reset Form" style="background-color: darkred; color: white; width: 30%;">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: darkblue;">Loan Application Form</h2>
+
+    <form action="submit_loan.php" method="post">
+        <!-- Personal Information -->
+        <fieldset style="border: 2px solid darkgreen; padding: 10px; margin: 10px;">
+            <legend style="color: darkgreen; font-weight: bold;">Personal Information</legend>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td width="30%"><label for="full_name">Full Name:</label></td>
+                    <td><input type="text" id="full_name" name="full_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender" style="width: 100%;" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Address Information -->
+        <fieldset style="border: 2px solid darkblue; padding: 10px; margin: 10px;">
+            <legend style="color: darkblue; font-weight: bold;">Address Information</legend>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td width="30%"><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" style="width: 100%;" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" name="state" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip Code:</label></td>
+                    <td><input type="text" id="zip" name="zip" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td><input type="text" id="country" name="country" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Loan Details -->
+        <fieldset style="border: 2px solid darkgreen; padding: 10px; margin: 10px;">
+            <legend style="color: darkgreen; font-weight: bold;">Loan Details</legend>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td width="30%"><label for="loan_type">Loan Type:</label></td>
+                    <td>
+                        <select id="loan_type" name="loan_type" style="width: 100%;" required>
+                            <option value="personal">Personal Loan</option>
+                            <option value="home">Home Loan</option>
+                            <option value="auto">Auto Loan</option>
+                            <option value="education">Education Loan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="amount">Loan Amount:</label></td>
+                    <td><input type="number" id="amount" name="amount" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="term">Loan Term (Years):</label></td>
+                    <td><input type="number" id="term" name="term" min="1" max="30" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="income">Annual Income:</label></td>
+                    <td><input type="number" id="income" name="income" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Employment Details -->
+        <fieldset style="border: 2px solid darkblue; padding: 10px; margin: 10px;">
+            <legend style="color: darkblue; font-weight: bold;">Employment Details</legend>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td width="30%"><label for="employer">Employer:</label></td>
+                    <td><input type="text" id="employer" name="employer" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="position">Position:</label></td>
+                    <td><input type="text" id="position" name="position" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="employment_duration">Duration of Employment:</label></td>
+                    <td><input type="text" id="employment_duration" name="employment_duration" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Submission Section -->
+        <fieldset style="border: 2px solid darkgreen; padding: 10px; margin: 10px;">
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit Application" style="background-color: darkblue; color: white; padding: 10px; border: none; cursor: pointer;">
+                        <input type="reset" value="Reset Form" style="background-color: darkred; color: white; padding: 10px; border: none; cursor: pointer;">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

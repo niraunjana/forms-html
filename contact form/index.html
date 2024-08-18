@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* This is a fallback for browsers that support style tags */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        form {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="submit"], input[type="reset"] {
+            border: none;
+            border-radius: 4px;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: navy;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="submit_contact.php" method="post">
+            <h2 align="center" style="color: navy;">Contact Us</h2>
+            <table>
+                <tr>
+                    <td bgcolor="#e9ecef"><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9ecef"><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9ecef"><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9ecef"><label for="subject">Subject:</label></td>
+                    <td><input type="text" id="subject" name="subject" required></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#e9ecef"><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" rows="5" cols="30" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

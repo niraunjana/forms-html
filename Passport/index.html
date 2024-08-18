@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Application Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: darkblue;">Passport Application Form</h2>
+
+    <form action="submit_passport.php" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Personal Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="first_name">First Name:</label></td>
+                    <td width="75%"><input type="text" id="first_name" name="first_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" id="last_name" name="last_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender" style="width: 100%;" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="place_of_birth">Place of Birth:</label></td>
+                    <td><input type="text" id="place_of_birth" name="place_of_birth" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nationality">Nationality:</label></td>
+                    <td><input type="text" id="nationality" name="nationality" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Contact Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="email">Email:</label></td>
+                    <td width="75%"><input type="email" id="email" name="email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Residential Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" style="width: 100%;" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" name="state" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip Code:</label></td>
+                    <td><input type="text" id="zip" name="zip" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td><input type="text" id="country" name="country" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Passport Details -->
+        <fieldset>
+            <legend style="color: darkgreen;">Passport Details</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="passport_type">Passport Type:</label></td>
+                    <td width="75%">
+                        <select id="passport_type" name="passport_type" style="width: 100%;" required>
+                            <option value="ordinary">Ordinary Passport</option>
+                            <option value="diplomatic">Diplomatic Passport</option>
+                            <option value="official">Official Passport</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="issue_country">Country of Issue:</label></td>
+                    <td><input type="text" id="issue_country" name="issue_country" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="issue_date">Date of Issue:</label></td>
+                    <td><input type="date" id="issue_date" name="issue_date" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="expiry_date">Date of Expiry:</label></td>
+                    <td><input type="date" id="expiry_date" name="expiry_date" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Submission Section -->
+        <fieldset>
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit Application" style="background-color: darkblue; color: white; width: 30%;">
+                        <input type="reset" value="Reset Form" style="background-color: darkred; color: white; width: 30%;">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

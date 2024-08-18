@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit/Withdraw Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: navy;">Deposit/Withdraw Transaction Form</h2>
+
+    <form action="submit_transaction.php" method="post">
+        <table width="100%" height="80%" border="1" cellpadding="15" cellspacing="0" bgcolor="#f9f9f9">
+            <!-- Account Information Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Account Information</strong></td>
+            </tr>
+            <tr>
+                <td width="40%"><label for="account_number">Account Number:</label></td>
+                <td width="60%"><input type="text" id="account_number" name="account_number" style="width: 100%;" required></td>
+            </tr>
+            <tr>
+                <td><label for="account_name">Account Holder Name:</label></td>
+                <td><input type="text" id="account_name" name="account_name" style="width: 100%;" required></td>
+            </tr>
+            
+            <!-- Transaction Details Section -->
+            <tr>
+                <td colspan="2" bgcolor="#e0e0e0" align="center"><strong>Transaction Details</strong></td>
+            </tr>
+            <tr>
+                <td><label for="transaction_type">Transaction Type:</label></td>
+                <td>
+                    <input type="radio" id="deposit" name="transaction_type" value="deposit" required>
+                    <label for="deposit">Deposit</label>
+                    <input type="radio" id="withdraw" name="transaction_type" value="withdraw" required>
+                    <label for="withdraw">Withdraw</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="amount">Amount:</label></td>
+                <td><input type="number" id="amount" name="amount" style="width: 100%;" required></td>
+            </tr>
+
+            <!-- Submission Section -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Transaction" style="background-color: navy; color: white; width: 40%;">
+                    <input type="reset" value="Reset Form" style="background-color: maroon; color: white; width: 40%;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

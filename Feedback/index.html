@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+
+    <h2 align="center">Feedback Form</h2>
+
+    <form>
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Full Name -->
+            <label for="full_name" style="display: inline-block; width: 150px;">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" style="width: 300px;"><br><br>
+
+            <!-- Email -->
+            <label for="email" style="display: inline-block; width: 150px;">Email:</label>
+            <input type="email" id="email" name="email" style="width: 300px;"><br><br>
+
+            <!-- Phone Number -->
+            <label for="phone" style="display: inline-block; width: 150px;">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" style="width: 300px;"><br><br>
+        </fieldset>
+
+        <!-- Feedback Information -->
+        <fieldset>
+            <legend>Feedback Information</legend>
+
+            <!-- Feedback Type -->
+            <label for="feedback_type" style="display: inline-block; width: 150px;">Feedback Type:</label>
+            <select id="feedback_type" name="feedback_type" style="width: 310px;">
+                <option value="complaint">Complaint</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="compliment">Compliment</option>
+            </select><br><br>
+
+            <!-- Comments -->
+            <label for="comments" style="display: inline-block; width: 150px; vertical-align: top;">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" style="width: 300px;"></textarea><br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Feedback" style="margin-left: 150px;">
+    </form>
+
+</body>
+</html>

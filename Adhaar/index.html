@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar Application Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: darkblue;">Aadhaar Application Form</h2>
+
+    <form action="submit_aadhaar.php" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Personal Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="full_name">Full Name:</label></td>
+                    <td width="75%"><input type="text" id="full_name" name="full_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender" style="width: 100%;" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" style="width: 100%;" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" name="state" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip Code:</label></td>
+                    <td><input type="text" id="zip" name="zip" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td><input type="text" id="country" name="country" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Contact Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="email">Email:</label></td>
+                    <td width="75%"><input type="email" id="email" name="email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Aadhaar Details -->
+        <fieldset>
+            <legend style="color: darkgreen;">Aadhaar Details</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="aadhaar_number">Aadhaar Number:</label></td>
+                    <td width="75%"><input type="text" id="aadhaar_number" name="aadhaar_number" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="proof_of_identity">Proof of Identity:</label></td>
+                    <td>
+                        <select id="proof_of_identity" name="proof_of_identity" style="width: 100%;" required>
+                            <option value="passport">Passport</option>
+                            <option value="voter_id">Voter ID</option>
+                            <option value="driving_license">Driving License</option>
+                            <option value="pan_card">PAN Card</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="proof_of_address">Proof of Address:</label></td>
+                    <td>
+                        <select id="proof_of_address" name="proof_of_address" style="width: 100%;" required>
+                            <option value="utility_bill">Utility Bill</option>
+                            <option value="rental_agreement">Rental Agreement</option>
+                            <option value="bank_statement">Bank Statement</option>
+                            <option value="aadhar_card">Aadhaar Card</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Submission Section -->
+        <fieldset>
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit Application" style="background-color: darkblue; color: white; width: 30%;">
+                        <input type="reset" value="Reset Form" style="background-color: darkred; color: white; width: 30%;">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

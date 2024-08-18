@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <h2 align="center">Application Form</h2>
+
+    <form>
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Full Name -->
+            <label for="full_name" style="display: inline-block; width: 150px;">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" style="width: 300px;"><br><br>
+
+            <!-- Date of Birth -->
+            <label for="dob" style="display: inline-block; width: 150px;">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" style="width: 300px;"><br><br>
+
+            <!-- Gender -->
+            <label style="display: inline-block; width: 150px;">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <!-- Email -->
+            <label for="email" style="display: inline-block; width: 150px;">Email:</label>
+            <input type="email" id="email" name="email" style="width: 300px;"><br><br>
+
+            <!-- Phone Number -->
+            <label for="phone" style="display: inline-block; width: 150px;">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" style="width: 300px;"><br><br>
+        </fieldset>
+
+        <!-- Address Information -->
+        <fieldset>
+            <legend>Address Information</legend>
+
+            <!-- Address -->
+            <label for="address" style="display: inline-block; width: 150px; vertical-align: top;">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50" style="width: 300px;"></textarea><br><br>
+
+            <!-- City -->
+            <label for="city" style="display: inline-block; width: 150px;">City:</label>
+            <input type="text" id="city" name="city" style="width: 300px;"><br><br>
+
+            <!-- State -->
+            <label for="state" style="display: inline-block; width: 150px;">State:</label>
+            <input type="text" id="state" name="state" style="width: 300px;"><br><br>
+
+            <!-- Zip Code -->
+            <label for="zip" style="display: inline-block; width: 150px;">Zip Code:</label>
+            <input type="text" id="zip" name="zip" style="width: 300px;"><br><br>
+
+            <!-- Country -->
+            <label for="country" style="display: inline-block; width: 150px;">Country:</label>
+            <select id="country" name="country" style="width: 310px;">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+        </fieldset>
+
+        <!-- Education Information -->
+        <fieldset>
+            <legend>Education Information</legend>
+
+            <!-- Highest Qualification -->
+            <label for="qualification" style="display: inline-block; width: 150px;">Highest Qualification:</label>
+            <input type="text" id="qualification" name="qualification" style="width: 300px;"><br><br>
+
+            <!-- University/College -->
+            <label for="college" style="display: inline-block; width: 150px;">University/College:</label>
+            <input type="text" id="college" name="college" style="width: 300px;"><br><br>
+
+            <!-- Year of Passing -->
+            <label for="year" style="display: inline-block; width: 150px;">Year of Passing:</label>
+            <input type="number" id="year" name="year" min="1900" max="2099" step="1" style="width: 100px;"><br><br>
+        </fieldset>
+
+        <!-- Work Experience -->
+        <fieldset>
+            <legend>Work Experience</legend>
+
+            <!-- Company Name -->
+            <label for="company" style="display: inline-block; width: 150px;">Company Name:</label>
+            <input type="text" id="company" name="company" style="width: 300px;"><br><br>
+
+            <!-- Job Title -->
+            <label for="job_title" style="display: inline-block; width: 150px;">Job Title:</label>
+            <input type="text" id="job_title" name="job_title" style="width: 300px;"><br><br>
+
+            <!-- Years of Experience -->
+            <label for="experience" style="display: inline-block; width: 150px;">Years of Experience:</label>
+            <input type="number" id="experience" name="experience" min="0" max="50" style="width: 100px;"><br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Application" style="margin-left: 150px;">
+    </form>
+
+</body>
+</html>

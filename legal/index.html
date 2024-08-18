@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Form</title>
+</head>
+<body style="background-color: #f0f0f0; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+
+    <div style="max-width: 800px; margin: auto; padding: 20px; background-color: #ffffff; border: 1px solid #cccccc; border-radius: 8px;">
+        <h2 align="center" style="color: #333333;">Legal Form</h2>
+
+        <form action="submit_legal_form.php" method="post">
+
+            <!-- Personal Details -->
+            <fieldset style="border: 1px solid #007bff; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                <legend style="color: #007bff; font-weight: bold;">Personal Details</legend>
+
+                <label for="full_name" style="display: block; color: #333333; margin-bottom: 8px;">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="dob" style="display: block; color: #333333; margin-bottom: 8px;">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="email" style="display: block; color: #333333; margin-bottom: 8px;">Email:</label>
+                <input type="email" id="email" name="email" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="phone" style="display: block; color: #333333; margin-bottom: 8px;">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+            </fieldset>
+
+            <!-- Address Details -->
+            <fieldset style="border: 1px solid #007bff; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                <legend style="color: #007bff; font-weight: bold;">Address Details</legend>
+
+                <label for="address" style="display: block; color: #333333; margin-bottom: 8px;">Address:</label>
+                <textarea id="address" name="address" rows="4" required 
+                          style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"></textarea><br>
+
+                <label for="city" style="display: block; color: #333333; margin-bottom: 8px;">City:</label>
+                <input type="text" id="city" name="city" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="state" style="display: block; color: #333333; margin-bottom: 8px;">State:</label>
+                <input type="text" id="state" name="state" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="zip" style="display: block; color: #333333; margin-bottom: 8px;">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="country" style="display: block; color: #333333; margin-bottom: 8px;">Country:</label>
+                <input type="text" id="country" name="country" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+            </fieldset>
+
+            <!-- Legal Information -->
+            <fieldset style="border: 1px solid #007bff; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                <legend style="color: #007bff; font-weight: bold;">Legal Information</legend>
+
+                <label for="legal_id" style="display: block; color: #333333; margin-bottom: 8px;">Legal ID Number:</label>
+                <input type="text" id="legal_id" name="legal_id" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="issue_date" style="display: block; color: #333333; margin-bottom: 8px;">Issue Date:</label>
+                <input type="date" id="issue_date" name="issue_date" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="expiry_date" style="display: block; color: #333333; margin-bottom: 8px;">Expiry Date:</label>
+                <input type="date" id="expiry_date" name="expiry_date" required 
+                       style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; margin-bottom: 15px;"><br>
+            </fieldset>
+
+            <!-- Terms and Conditions -->
+            <fieldset style="border: 1px solid #007bff; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                <legend style="color: #007bff; font-weight: bold;">Terms and Conditions</legend>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" style="color: #333333;">I agree to the terms and conditions.</label><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <div style="text-align: center;">
+                <input type="submit" value="Submit" 
+                       style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

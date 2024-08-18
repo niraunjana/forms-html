@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application Form</title>
+</head>
+<body>
+
+    <h2 align="center" style="color: darkblue;">Scholarship Application Form</h2>
+
+    <form action="submit_scholarship.php" method="post">
+        <!-- Applicant Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Applicant Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="first_name">First Name:</label></td>
+                    <td width="75%"><input type="text" id="first_name" name="first_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" id="last_name" name="last_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender" style="width: 100%;" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" style="width: 100%;" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend style="color: darkgreen;">Academic Information</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="current_school">Current School/College:</label></td>
+                    <td width="75%"><input type="text" id="current_school" name="current_school" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="grade">Current Grade/Year:</label></td>
+                    <td><input type="text" id="grade" name="grade" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gpa">Current GPA:</label></td>
+                    <td><input type="text" id="gpa" name="gpa" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="major">Intended Major/Field of Study:</label></td>
+                    <td><input type="text" id="major" name="major" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="extra_curricular">Extracurricular Activities:</label></td>
+                    <td><textarea id="extra_curricular" name="extra_curricular" rows="4" style="width: 100%;"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Scholarship Details -->
+        <fieldset>
+            <legend style="color: darkgreen;">Scholarship Details</legend>
+            <table width="100%" cellpadding="5">
+                <tr>
+                    <td width="25%"><label for="scholarship_type">Type of Scholarship:</label></td>
+                    <td width="75%">
+                        <select id="scholarship_type" name="scholarship_type" style="width: 100%;" required>
+                            <option value="merit">Merit-Based</option>
+                            <option value="need">Need-Based</option>
+                            <option value="athletic">Athletic</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="essay">Scholarship Essay:</label></td>
+                    <td><textarea id="essay" name="essay" rows="6" style="width: 100%;" placeholder="Describe your qualifications, goals, and why you deserve this scholarship..." required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Submission Section -->
+        <fieldset>
+            <table width="100%">
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit Application" style="background-color: darkgreen; color: white; width: 30%;">
+                        <input type="reset" value="Reset Form" style="background-color: darkred; color: white; width: 30%;">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

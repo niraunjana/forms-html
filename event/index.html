@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body style="background-color: #e9ecef; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+    <div style="max-width: 800px; margin: 50px auto; padding: 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 align="center" style="color: #007bff; margin-bottom: 20px;">Event Registration Form</h2>
+
+        <form action="submit_event_registration.php" method="post">
+            
+            <!-- Personal Information -->
+            <fieldset style="border: 2px solid #007bff; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <legend style="color: #007bff; font-weight: bold;">Personal Information</legend>
+
+                <label for="full_name" style="display: block; color: #495057; margin-bottom: 5px;">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required 
+                       style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="email" style="display: block; color: #495057; margin-bottom: 5px;">Email:</label>
+                <input type="email" id="email" name="email" required 
+                       style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="phone" style="display: block; color: #495057; margin-bottom: 5px;">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required 
+                       style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"><br>
+            </fieldset>
+
+            <!-- Event Details -->
+            <fieldset style="border: 2px solid #007bff; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <legend style="color: #007bff; font-weight: bold;">Event Details</legend>
+
+                <label for="event_name" style="display: block; color: #495057; margin-bottom: 5px;">Event Name:</label>
+                <input type="text" id="event_name" name="event_name" required 
+                       style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="event_date" style="display: block; color: #495057; margin-bottom: 5px;">Event Date:</label>
+                <input type="date" id="event_date" name="event_date" required 
+                       style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="event_time" style="display: block; color: #495057; margin-bottom: 5px;">Event Time:</label>
+                <input type="time" id="event_time" name="event_time" required 
+                       style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="number_of_guests" style="display: block; color: #495057; margin-bottom: 5px;">Number of Guests:</label>
+                <input type="number" id="number_of_guests" name="number_of_guests" min="1" required 
+                       style="width: 100px; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"><br>
+
+                <label for="additional_info" style="display: block; color: #495057; margin-bottom: 5px;">Additional Information:</label><br>
+                <textarea id="additional_info" name="additional_info" rows="4" cols="50" 
+                          style="width: calc(100% - 20px); padding: 10px; border: 1px solid #ced4da; border-radius: 4px; margin-bottom: 15px;"></textarea><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <div style="text-align: center;">
+                <input type="submit" value="Register for Event" 
+                       style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
