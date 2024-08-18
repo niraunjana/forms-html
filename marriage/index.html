@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f8ff;">
+
+    <h1 align="center" style="color: #4a5d23;">Marriage Registration Form</h1>
+
+    <form action="submit_marriage_registration.php" method="post" style="width: 80%; margin: auto; background-color: #ffffff; border: 2px solid #4a5d23; border-radius: 10px; padding: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1);">
+
+        <!-- Groom's Information -->
+        <fieldset style="border: 2px solid #4a5d23; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+            <legend style="color: #4a5d23; font-weight: bold; font-size: 18px;">Groom's Information</legend>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td style="width: 30%;"><label for="groom_full_name">Full Name:</label></td>
+                    <td><input type="text" id="groom_full_name" name="groom_full_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="groom_dob">Date of Birth:</label></td>
+                    <td><input type="date" id="groom_dob" name="groom_dob" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="groom_email">Email:</label></td>
+                    <td><input type="email" id="groom_email" name="groom_email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="groom_phone">Phone Number:</label></td>
+                    <td><input type="tel" id="groom_phone" name="groom_phone" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="groom_address">Address:</label></td>
+                    <td><textarea id="groom_address" name="groom_address" rows="4" style="width: 100%;" required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Bride's Information -->
+        <fieldset style="border: 2px solid #d06d6d; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+            <legend style="color: #d06d6d; font-weight: bold; font-size: 18px;">Bride's Information</legend>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td style="width: 30%;"><label for="bride_full_name">Full Name:</label></td>
+                    <td><input type="text" id="bride_full_name" name="bride_full_name" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bride_dob">Date of Birth:</label></td>
+                    <td><input type="date" id="bride_dob" name="bride_dob" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bride_email">Email:</label></td>
+                    <td><input type="email" id="bride_email" name="bride_email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bride_phone">Phone Number:</label></td>
+                    <td><input type="tel" id="bride_phone" name="bride_phone" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bride_address">Address:</label></td>
+                    <td><textarea id="bride_address" name="bride_address" rows="4" style="width: 100%;" required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Marriage Details -->
+        <fieldset style="border: 2px solid #1e90ff; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+            <legend style="color: #1e90ff; font-weight: bold; font-size: 18px;">Marriage Details</legend>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td style="width: 30%;"><label for="marriage_date">Date of Marriage:</label></td>
+                    <td><input type="date" id="marriage_date" name="marriage_date" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="marriage_location">Location of Marriage:</label></td>
+                    <td><input type="text" id="marriage_location" name="marriage_location" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="witnesses">Witnesses:</label></td>
+                    <td><textarea id="witnesses" name="witnesses" rows="3" style="width: 100%;" required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Submission Section -->
+        <div style="text-align: center;">
+            <input type="submit" value="Submit Registration" style="background-color: #4a5d23; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            <input type="reset" value="Reset Form" style="background-color: #d06d6d; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">
+        </div>
+
+    </form>
+
+</body>
+</html>
